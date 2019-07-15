@@ -5,20 +5,21 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { ProductListModule } from './product-list/product-list.module';
 import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    ProductListModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ])
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
-    ProductListComponent
+    TopBarComponent
   ],
   bootstrap: [ AppComponent ]
 })

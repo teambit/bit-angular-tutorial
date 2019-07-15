@@ -68,4 +68,4 @@ typings/
 
 #gitignore for bit
 .bit/
-
+dist/
